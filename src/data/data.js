@@ -1,6 +1,5 @@
 import {
     JavascriptOriginal,
-    PythonOriginal,
     Html5Original,
     Css3Original,
     ExpressOriginal,
@@ -10,7 +9,6 @@ import {
     BootstrapPlain,
     NodejsOriginal,
     MongodbPlain,
-    DjangoPlain,
     MysqlOriginalWordmark,
     PostgresqlOriginal,
     CsharpOriginal
@@ -203,7 +201,7 @@ import {
       name: "About Me",
       icon: "/images/profile_pic_round.jpg",
       action: "explorer",
-      size: "w-18 h-18",
+      size: "w-14 h-14",
     },
     {
       id: 3,

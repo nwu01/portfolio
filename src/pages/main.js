@@ -1,12 +1,10 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useState } from "react";
 import Explorer from "../components/apps/Explorer";
 import Taskbar from "../components/layout/Taskbar";
 import RightClick from "../components/utilities/RightClick";
 import StartMenu from "../components/layout/StartMenu";
 import Browser from "../components/apps/Browser";
 import Calculator from "../components/apps/Calculator";
-// import VsCode from "../components/apps/VsCode";
-// import Slider from "../components/utilities/Slider";
 import RecycleBin from "../components/apps/RecycleBin";
 import Apps from "../components/apps/Apps";
 import { motion } from "framer-motion";
@@ -15,9 +13,6 @@ import appsData from "../data/data";
 
 function Main() {
   const constraintsRef = useRef(null);
-  const [isSleeping, setIsSleeping] = useState(false);
-  const [fadeOut, setFadeOut] = useState(false);
-  const [actionType, setActionType] = useState(null);
 
   const [windows, setWindows] = useState({
     menu: false,
@@ -62,33 +57,6 @@ function Main() {
     bottom: screenHeight - 624,
   };
 
-  function handleFadeOutClick() {
-    setFadeOut(true);
-    setTimeout(() => {
-      setIsSleeping(false);
-      setFadeOut(false);
-    }, 1000);
-  }
-
-  const images = useMemo(
-    () => [
-      "/images/fun/1.gif",
-      "/images/fun/2.jpg",
-      "/images/fun/3.jpg",
-      "/images/fun/4.jpg",
-    ],
-    []
-  );
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
   return (
     <>
 
@@ -133,8 +101,6 @@ function Main() {
             isStartOpen={windows.start}
             toggleStart={() => toggleWindow("start")}
             setInput={setInput}
-            setIsSleeping={setIsSleeping}
-            setActionType={setActionType}
           />
           <Browser
             isAppOpen={windows.browser}
@@ -170,11 +136,6 @@ function Main() {
           toggleBrowser={() => toggleWindow("browser")}
         />
       </div>
-      {/* <Slider
-        isMenuOpen={windows.menu}
-        setIsMenuOpen={() => toggleWindow("menu")}
-        toggleMenu={() => toggleWindow("menu")}
-      /> */}
     </>
   );
 }
