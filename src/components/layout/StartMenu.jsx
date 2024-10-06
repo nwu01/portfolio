@@ -203,15 +203,15 @@ function StartMenu({
                 </div>
               </div>
               <div className="recent">
-                <div>
+                <div className="flex items-center justify-center">
                   <img
-                    src="https://laaouatni.github.io/w11CSS/images/Photos-folder.ico"
-                    alt="folder microsoft"
+                    src="/images/calculator.png"
+                    alt="calculator"
                   />
                 </div>
                 <div>
-                  <div>Study Materials</div>
-                  <div>30 minutes ago</div>
+                  <div>Calculator</div>
+                  <div>2 week ago</div>
                 </div>
               </div>
             </div>
