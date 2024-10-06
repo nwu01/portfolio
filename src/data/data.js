@@ -26,27 +26,26 @@ import {
   
   export const githubRepos = [
     {
-      name: "Portfolio",
-      techUsed: ["Next.js", "TailwindCSS"],
-      description: "Uncover deeper insights into my journey and capabilities.",
-      githubLink: `${githubLink}/Portfolio`,
-      liveURL: "https://portfolio-vert-one-79.vercel.app/",
+      name: "Nature's Best Natural Foods",
+      techUsed: ["HTML", "CSS", "JavaScript", "11ty"],
+      description: "Explore a wide selection of popular products at discounted prices. Big savings on best sellers. Discounts on supplements, pet health and aromatherapy oils.",
+      githubLink: `${githubLink}/Nature-s-Best`,
+      link: "https://nature-s-best.vercel.app/",
     },
     {
-      name: "Emoji-TicTacToe",
-      techUsed: ["React", "TailwindCSS"],
+      name: "Robert McLaughlin Gallery",
+      techUsed: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"],
       description:
-        "Emoji TicTacToe adds a fun twist to the classic game with colorful emojis, offering single and local multiplayer modes, responsive design, and captivating animations.",
-      githubLink: `${githubLink}/Emoji-TicTacToe`,
-      liveURL: "https://emoji-tic-tac-toe.vercel.app/",
+        "The RMG Collections. Discover the permanent collection, historical photographs of Oshawa, and the art library. Artworks. Thomas Bouckley Collection. Art Library.",
+      link: "https://rmg.minisisinc.com",
     },
     {
-      name: "NYX",
-      techUsed: ["HTML", "CSS", "JavaScript"],
+      name: "Marpole Web Design - Coming Soon...",
+      techUsed: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Next.js"],
       description:
-        "NYX is a sleek Website Blocker that empowers users to block distracting websites for set durations, promoting productivity and focus.",
+        "Small Business. Web Design. Web Development. Websites for entrepreneurs and small businesses.",
       githubLink: `${githubLink}/nyx`,
-      liveURL: `${githubLink}/nyx`,
+      link: `${githubLink}/nyx`,
     },
   ];
   

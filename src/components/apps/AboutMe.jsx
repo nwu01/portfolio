@@ -13,10 +13,10 @@ const SkillItem = ({ skillItem, isTechStack = false, iconSize = 15 }) => {
   }
 
   return (
-    <div className="flex items-center ring-2 ring-neutral-700 bg-neutral-900 rounded-sm p-2 pl-3">
+    <div className="flex items-center ring-2 ring-neutral-300 bg-neutral-900 rounded-sm p-2 pl-3">
       {React.cloneElement(skillItem.icon, { size: iconSize })}
       <span
-        className={`ml-2 text-neutral-400 text-selection hover:text-neutral-200 duration-150 ease-in-out cursor-pointer ${
+        className={`ml-2 text-neutral-300 text-selection hover:text-neutral-200 duration-150 ease-in-out cursor-pointer ${
           isTechStack ? "text-xs" : "text-sm"
         }`}
       >
@@ -34,27 +34,13 @@ const ProjectCard = ({ repo }) => {
     });
 
   return (
-    <div className="bg-neutral-900/80 rounded-md px-4 pt-3 hover:translate-x-1 hover:-translate-y-1 duration-300 text-selection">
-      <div className="flex items-center justify-between">
-        <a
-          href={repo.githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View GitHub repository"
-        >
-          <FaGithub size={30} />
+    <div className="bg-neutral-900/80 rounded-md px-4 pt-3 py-4  hover:bg-neutral-700">
+      <h3 className="text-xl font-bold mt-3">
+        <a href={repo.link} target="_blank" rel="noopener noreferrer">
+          {repo.name}
         </a>
-        <a
-          href={repo.liveURL}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit live site"
-        >
-          <FaExternalLinkAlt size={15} />
-        </a>
-      </div>
-      <h3 className="font-bold mt-6">{repo.name}</h3>
-      <p className="text-neutral-700 mt-4 text-sm">{repo.description}</p>
+      </h3>
+      <p className="text-neutral-400 mt-4 text-sm">{repo.description}</p>
       <div className="flex items-center mt-4 gap-2 flex-wrap">
         {renderSkills()}
       </div>
