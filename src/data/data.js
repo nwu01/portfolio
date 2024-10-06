@@ -10,14 +10,9 @@ import {
     BootstrapPlain,
     NodejsOriginal,
     MongodbPlain,
-    PostmanPlain,
-    CPlain,
     DjangoPlain,
     MysqlOriginalWordmark,
     PostgresqlOriginal,
-    PhotoshopOriginal,
-    FigmaOriginal,
-    BlenderOriginal,
     CsharpOriginal
   } from "devicons-react";
   
@@ -46,14 +41,6 @@ import {
         "Emoji TicTacToe adds a fun twist to the classic game with colorful emojis, offering single and local multiplayer modes, responsive design, and captivating animations.",
       githubLink: `${githubLink}/Emoji-TicTacToe`,
       liveURL: "https://emoji-tic-tac-toe.vercel.app/",
-    },
-    {
-      name: "GTA-VI(Early Access)",
-      techUsed: ["Python"],
-      description:
-        "Explore chaos in GTA VI(Early Access), a Python and Ursina-powered open-world adventure. Engage in a gripping narrative, experience dynamic gameplay, and unlock exclusive updates. Navigate the urban jungle and gear up for the thrill!",
-      githubLink: `${githubLink}/GTA-VI-Early-Access-`,
-      liveURL: `${githubLink}/GTA-VI-Early-Access-`,
     },
     {
       name: "NYX",
@@ -99,14 +86,6 @@ import {
   const iconClass = "mx-auto";
   
   export const skills = [
-    {
-      key: 1,
-      name: "Python",
-      type: "language",
-      icon: PythonOriginal ? (
-        <PythonOriginal className={iconClass} size={iconSize} />
-      ) : null,
-    },
     {
       key: 2,
       name: "JavaScript",
@@ -195,14 +174,6 @@ import {
     },
     {
       key: 13,
-      name: "Django",
-      type: "framework",
-      icon: DjangoPlain ? (
-        <DjangoPlain className={iconClass} size={iconSize} />
-      ) : null,
-    },
-    {
-      key: 14,
       name: "MySQL",
       type: "database",
       icon: MysqlOriginalWordmark ? (
@@ -210,7 +181,7 @@ import {
       ) : null,
     },
     {
-      key: 15,
+      key: 14,
       name: "PostgreSQL",
       type: "database",
       icon: PostgresqlOriginal ? (
@@ -258,13 +229,6 @@ import {
     },
     {
       id: 6,
-      name: "VS Code",
-      icon: "https://laaouatni.github.io/w11CSS/images/vs-code.ico",
-      action: "vscode",
-      size: "w-8 h-8",
-    },
-    {
-      id: 7,
       name: "Spotify",
       icon: "https://www.freepnglogos.com/uploads/spotify-logo-png/image-gallery-spotify-logo-21.png",
       action: "app",

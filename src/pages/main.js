@@ -157,12 +157,6 @@ function Main() {
             toggleRecycle={() => toggleWindow("recycle")}
             bounds={bounds}
           />
-          {/*
-          <VsCode
-            isAppOpen={windows.vscode}
-            toggleVsCode={() => toggleWindow("vscode")}
-            bounds={bounds}
-          />*/}
           <Apps
             isAppOpen={windows.app}
             toggleApp={(input) => toggleWindow("app", input)}

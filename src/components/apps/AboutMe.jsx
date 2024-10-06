@@ -320,12 +320,6 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
             </div>
           </div>
         );
-      case "Resume":
-        return (
-          <main className="border-0 flex w-full justify-center opacity-75 mt-2 text-sm">
-            too bored to make a resume.
-          </main>
-        );
       default:
         return "404 not found";
     }

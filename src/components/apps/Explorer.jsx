@@ -16,8 +16,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
     if (aboutMe === true) setIcon("home");
     else if (page === "Experience") setIcon("experience");
     else if (page === "Skills") setIcon("skills");
-    else if (page === "Work") setIcon("projects");
-    else if (page === "Resume") setIcon("resume");
+    else if (page === "Work") setIcon("projects");    
     else setIcon("user");
   }, [page, aboutMe]);
 
@@ -520,23 +519,6 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       className="w-5 h-5 mr-2.5"
                     />
                     Work
-                  </div>
-                  <div
-                    className={`flex items-center pl-2.5 mr-8 text-xs w-full h-8 rounded-sm ${
-                      page === "Resume"
-                        ? "bg-gray-200 bg-opacity-80 text-neutral-900"
-                        : "hover:bg-neutral-700 text-white"
-                    }`}
-                    onClick={() => {
-                      setPage("Resume");
-                    }}
-                  >
-                    <img
-                      src="/images/resume.png"
-                      alt="Resume"
-                      className="w-5 h-5 mr-2.5"
-                    />
-                    Resume
                   </div>
                 </div>
                 <AboutMe

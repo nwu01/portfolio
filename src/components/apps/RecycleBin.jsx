@@ -36,7 +36,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
               <div className="flex justify-between items-center w-full">
                 <div className="pl-2 text-xs flex">
                   <img
-                    src={`/images/apps/recyclebin.png`}
+                    src={`/images/recyclebin.png`}
                     alt="main icons"
                     className="w-5 h-5 mr-2"
                   />
@@ -184,7 +184,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                 <div className="border-b-[1.5px] border-neutral-700 h-20">
                   <div className="flex items-center justify-center mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/home.png"
+                      src="/images/home.png"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -192,7 +192,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex items-center justify-center mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/gallery.png"
+                      src="/images/gallery.png"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -202,7 +202,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                 <div className="mt-3.5 border-b-[1.5px] border-neutral-700 h-52">
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/Desktop.ico"
+                      src="/images/Desktop.ico"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -213,7 +213,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/Downloads.ico"
+                      src="/images/Downloads.ico"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -224,7 +224,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/Documents.ico"
+                      src="/images/Documents.ico"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -235,7 +235,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/Photos.ico"
+                      src="/images/Photos.ico"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -246,7 +246,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/Music.ico"
+                      src="/images/Music.ico"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -257,7 +257,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                     <img
-                      src="/images/folders/Videos.ico"
+                      src="/images/Videos.ico"
                       alt="details"
                       className="w-5 h-5 mr-1"
                     />
@@ -270,7 +270,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                 <div className="mt-3.5 border-b-[1.5px] border-neutral-700 h-52">
                   <div className="flex items-center pl-12 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm relative">
                     <img
-                      src="/images/folders/Computer.ico"
+                      src="/images/Computer.ico"
                       alt="details"
                       className="w-4 h-4 mr-1"
                     />
@@ -281,7 +281,7 @@ const RecycleBin = ({ isRecycleOpen, toggleRecycle, bounds }) => {
                   </div>
                   <div className="flex items-center pl-12 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm relative">
                     <img
-                      src="/images/folders/Network.ico"
+                      src="/images/Network.ico"
                       alt="details"
                       className="w-4 h-4 mr-1"
                     />

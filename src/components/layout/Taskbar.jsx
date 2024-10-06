@@ -57,7 +57,17 @@ export default function Taskbar({
           >
             <img
               src="/images/edge.png"
-              alt="windows_logo"
+              alt="edge logo"
+              className="h-8"
+            />
+          </div>
+          <div
+            className="flex justify-center items-center font-semibold text-sm hover:bg-neutral-700 my-1 h-full rounded-md px-1 w-11"
+            onClick={toggleBrowser}
+          >
+            <img
+              src="/images/chrome.png"
+              alt="chrome logo"
               className="h-8"
             />
           </div>
@@ -69,8 +79,8 @@ export default function Taskbar({
           <div className="hover:bg-neutral-700 my-1 h-full flex justify-center items-center rounded-lg gap-x-1.5 px-2">
             <div className="material-symbols-outlined text-sm">wifi</div>
             <div className="material-symbols-outlined text-lg">volume_up</div>
-            <div className="material-symbols-outlined text-lg rotate-180">
-              battery_low
+            <div className="material-symbols-outlined text-lg">
+              battery_full
             </div>
           </div>
           <div className="flex justify-center items-center font-semibold text-sm hover:bg-neutral-700 my-1 h-full rounded-lg px-2">

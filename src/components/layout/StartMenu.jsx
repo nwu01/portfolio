@@ -181,24 +181,24 @@ function StartMenu({
               <div className="recent">
                 <div>
                   <img
-                    src="https://laaouatni.github.io/w11CSS/images/vs-code.ico"
-                    alt="VS code icon"
+                    src="/images/profile_pic_round.jpg"
+                    alt="Nixon Wu"
                   />
                 </div>
                 <div>
-                  <div>VS Code</div>
-                  <div>Recently added</div>
+                  <div>About Me</div>
+                  <div>Frequently used app</div>
                 </div>
               </div>
               <div className="recent">
                 <div>
                   <img
-                    src="https://laaouatni.github.io/w11CSS/images/vs-normal.ico"
-                    alt="visual studio icon"
+                    src="https://www.freepnglogos.com/uploads/spotify-logo-png/image-gallery-spotify-logo-21.png"
+                    alt="Spotify"
                   />
                 </div>
                 <div>
-                  <div>Visual Studio</div>
+                  <div>Spotify</div>
                   <div>Recently added</div>
                 </div>
               </div>
