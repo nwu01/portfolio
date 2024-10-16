@@ -87,7 +87,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                 <h1 className="text-5xl font-bold mb-2">Nixon Wu</h1>
                 <h3 className="text-xl font-bold">{profileDescription[0]}</h3>
                 <p className="py-4">{profileDescription[1]}</p>
-                <p className="py-2">{profileDescription[2]}</p>
+                <p className="py-2">{profileDescription[2]} <span className="hover:underline">{profileDescription[3]}</span></p>
               </div>
             </div>
           </div>

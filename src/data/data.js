@@ -21,7 +21,8 @@ import {
   export const profileDescription = [
     "Full Stack Developer",
     "From designing seamless dynamic user experiences to building robust backend systems, I craft solutions that are both functional and scalable. With a focus on staying ahead of the curve in web technologies, I'm always ready to take on new challenges to turn innovative concepts into reality.",
-    "Let's work together!"
+    "Want to work together?",
+    <a href="mailto:nixonwu01@gmail.com">nixonwu01@gmail.com</a>
   ];
   
   export const githubRepos = [
@@ -40,12 +41,12 @@ import {
       link: "https://rmg.minisisinc.com",
     },
     {
-      name: "Marpole Web Design - Coming Soon...",
-      techUsed: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Next.js"],
+      name: "Marpole Web Design",
+      techUsed: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Next.js", "MongoDB"],
       description:
         "Small Business. Web Design. Web Development. Websites for entrepreneurs and small businesses.",
-      githubLink: `${githubLink}/nyx`,
-      link: `${githubLink}/nyx`,
+      githubLink: `${githubLink}/marpole-web-design`,
+      link: `https://marpole-web-design.vercel.app/`,
     },
   ];
   
