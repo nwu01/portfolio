@@ -19,7 +19,7 @@ import {
   
   // Profile Description
   export const profileDescription = [
-    "Full Stack Developer",
+    "Senior Full Stack Developer",
     "From designing seamless dynamic user experiences to building robust backend systems, I craft solutions that are both functional and scalable. With a focus on staying ahead of the curve in web technologies, I'm always ready to take on new challenges to turn innovative concepts into reality.",
     "Want to work together?",
     <a href="mailto:nixonwu01@gmail.com">nixonwu01@gmail.com</a>
@@ -53,11 +53,11 @@ import {
   export const workExperience = [
     {
       key: 1,
-      company: "MINISIS Inc.",
+      company: "Soutron Global",
       year: "2019 - Present",
-      position: "Full Stack Developer",
+      position: "Senior Full Stack Developer",
       location: "Vancouver, BC",
-      tech: "JS, React, TypeScript, NodeJS, NextJS, Tailwind, C#, HTML, CSS, jQuery, Git",
+      tech: "JS, React, TypeScript, NodeJS, NextJS, Tailwind, C#, HTML, CSS, jQuery, Git, MongoDB",
       type: "work",
     },
     {
