@@ -5,7 +5,6 @@ import {
   skills,
   githubRepos,
 } from "../../data/data";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const SkillItem = ({ skillItem, isTechStack = false, iconSize = 15 }) => {
   if (!skillItem || !skillItem.icon) {

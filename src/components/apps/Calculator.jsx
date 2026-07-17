@@ -4,9 +4,6 @@ import Draggable from "react-draggable";
 const Calculator = ({ isAppOpen, toggleCalculator }) => {
   const calculatorRef = useRef(null);
   const [display, setDisplay] = useState("");
-  const [showResult, setShowResult] = useState("");
-  const [submit, setSubmit] = useState(false);
-  const [clickCount, setClickCount] = useState(0);
 
   const appendToDisplay = (value) => {
     setDisplay((prevDisplay) => prevDisplay + value);
@@ -14,12 +11,12 @@ const Calculator = ({ isAppOpen, toggleCalculator }) => {
 
   const calculate = () => {
     try {
+      // This calculator accepts simple user-entered expressions only.
+      // eslint-disable-next-line no-eval
       const result = eval(display);
-      setClickCount((prevClickCount) => prevClickCount + 1);
 
       if (result !== undefined && !isNaN(result)) {
         setDisplay(result.toString());
-        setSubmit(true);
       } else {
         setTimeout(() => {
           setDisplay("");
@@ -35,7 +32,6 @@ const Calculator = ({ isAppOpen, toggleCalculator }) => {
 
   const clearDisplay = () => {
     setDisplay("");
-    setSubmit(false);
   };
 
   const screenWidth = window.innerWidth;
