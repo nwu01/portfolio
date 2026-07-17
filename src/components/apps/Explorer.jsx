@@ -450,8 +450,8 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                 </div>
               </>
             ) : (
-              <div className="flex flex-row h-full bg-neutral-900">
-                <div className="w-40 h-[100vh] pt-2 border-neutral-700 border-r-[1.5px] px-[2px]">
+              <div className="flex flex-row h-[calc(45rem-9.5rem)] bg-neutral-900 overflow-hidden">
+                <div className="w-40 h-full shrink-0 pt-2 border-neutral-700 border-r-[1.5px] px-[2px]">
                   <div
                     className={`flex items-center pl-2.5 mr-8 text-xs w-full h-8 rounded-sm ${
                       page === "About Me"

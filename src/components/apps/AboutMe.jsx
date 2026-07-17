@@ -94,105 +94,45 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
         );
       case "Experience":
         return (
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-8">
-            <li>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono text-lg italic">
-                  {workExperience[0].year}
-                </time>
-                <div className="text-xl font-bold font-3xl">
-                  {workExperience[0].company}
-                </div>
-                <div className="text-md font-2xl">
-                  {workExperience[0].location}
-                </div>
-                {workExperience[0].position}
-                <div className="text-md italic">
-                  {workExperience[0].tech}
-                </div>
-              </div>
-              <hr className="bg-gray-500" />
-            </li>
-            <li>
-              <hr className="bg-gray-500" />
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="timeline-end mb-10">
-                <time className="font-mono text-lg italic">
-                  {workExperience[1].year}
-                </time>
-                <div className="text-xl font-bold font-3xl">
-                  {workExperience[1].company}
-                </div>
-                <div className="text-md font-2xl">
-                  {workExperience[1].location}
-                </div>
-                {workExperience[1].position}
-                <div className="text-md italic mt-2">
-                  {workExperience[1].tech}
-                </div>
-              </div>
-              <hr className="bg-gray-500" />
-            </li>
-            <li>
-              <hr className="bg-gray-500" />
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="timeline-start mb-10">
-                <time className="font-mono text-lg italic">
-                  {workExperience[2].year}
-                </time>
-                <div className="text-xl font-bold font-3xl">
-                  {workExperience[2].company}
-                </div>
-                <div className="text-md font-2xl">
-                  {workExperience[2].location}
-                </div>
-                {workExperience[2].position}
-                <div className="text-md italic mt-2">
-                  {workExperience[2].tech}
-                </div>
-              </div>
-              {/* <hr className="bg-gray-500" /> */}
-            </li>
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-8 pb-8">
+            {workExperience.map((job, index) => {
+              const isStart = index % 2 === 0;
+              const isLast = index === workExperience.length - 1;
+
+              return (
+                <li key={job.key}>
+                  {index > 0 && <hr className="bg-gray-500" />}
+                  <div className="timeline-middle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="h-5 w-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    className={`${
+                      isStart
+                        ? "timeline-start md:text-end"
+                        : "timeline-end"
+                    } mb-10`}
+                  >
+                    <time className="font-mono text-lg italic">{job.year}</time>
+                    <div className="text-xl font-bold">{job.company}</div>
+                    <div className="text-md">{job.location}</div>
+                    {job.position}
+                    <div className="text-md italic mt-2">{job.tech}</div>
+                  </div>
+                  {!isLast && <hr className="bg-gray-500" />}
+                </li>
+              );
+            })}
           </ul>
         );
       case "Skills":
@@ -312,7 +252,9 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
   };
 
   return (
-    <main className="h-[100vh] w-full ml-2.5 mt-2">{renderPageContent()}</main>
+    <main className="flex-1 min-h-0 h-full w-full ml-2.5 mt-2 pr-3 overflow-y-auto">
+      {renderPageContent()}
+    </main>
   );
 };
 

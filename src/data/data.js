@@ -27,6 +27,13 @@ import {
   
   export const githubRepos = [
     {
+      name: "FlowRM",
+      techUsed: ["HTML", "CSS", "JavaScript", "React", "Next.js", "TailwindCSS"],
+      description: "A CRM for fitness businesses — manage clients, memberships, and training sessions in one workflow.",
+        githubLink: `https://flowrm.app`,
+      link: "https://flowrm.app",
+    },
+    {
       name: "Nature's Best Natural Foods",
       techUsed: ["HTML", "CSS", "JavaScript", "11ty"],
       description: "Explore a wide selection of popular products at discounted prices. Big savings on best sellers. Discounts on supplements, pet health and aromatherapy oils.",
@@ -53,6 +60,15 @@ import {
   export const workExperience = [
     {
       key: 1,
+      company: "Pacific Programming & Tech",
+      year: "2025 - Present",
+      position: "Frontend Developer",
+      location: "Vancouver, BC",
+      tech: "JS, React, TypeScript, NodeJS, NextJS, Tailwind, C#, HTML, CSS, Git, SQL, Claude AI, Cursor",
+      type: "work",
+    },
+    {
+      key: 2,
       company: "Soutron Global",
       year: "2019 - Present",
       position: "Senior Full Stack Developer",
@@ -61,7 +77,7 @@ import {
       type: "work",
     },
     {
-      key: 2,
+      key: 3,
       company: "Royal Canadian Mounted Police",
       year: "Feb 2021 - June 2023",
       position: "Applications Software Developer / Business Analyst",
@@ -70,7 +86,7 @@ import {
       type: "work",
     },
     {
-      key: 3,
+      key: 4,
       company: "Angel Glass Corporation",
       year: "Nov 2018 - June 2019",
       position: "Software Developer",
